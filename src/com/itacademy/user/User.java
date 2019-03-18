@@ -1,10 +1,12 @@
 package com.itacademy.user;
 
 import com.itacademy.utils.RentUtil;
+import com.itacademy.actions.UserActions;
 import com.itacademy.shop.Shop;
 import com.itacademy.shop.SportEquipment;
+import com.itacademy.shop.search.SearchOptions;
 
-public class User {
+public class User implements UserActions{
   
   private String name;
 
@@ -42,4 +44,10 @@ public class User {
     result = 31 * result + id;
     return result;
   }
+
+  @Override
+  public void findGood(SearchOptions searchOptions) {
+    
+  }
+
 }
